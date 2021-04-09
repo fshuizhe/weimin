@@ -3,8 +3,8 @@ title: 记录者
 email: fshuizhe@163.com
 description: > # this means to ignore newlines until "baseurl:"
   收藏我写的文章，以及在网上搜集的有趣东西。
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.jiluzhe.net" # the base hostname & protocol for your site
+baseurl: "weimin" # the subpath of your site, e.g. /blog/
+url: "https://fshuizhe.github.io" # the base hostname & protocol for your site
 
 
 # Sidebar filter
