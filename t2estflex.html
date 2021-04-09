@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test flex</title>
+        <link href="./assets/icon/font-awesome/css/font-awesome.min.css?v=4.7.0" rel="stylesheet" type="text/css" />
+        <style>
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #left{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+            }
+            #right{
+                display: none;
+                width: 40%;
+                background-color: azure;
+            }
+            #menub{
+                position: fixed;
+                top: 8px;
+                right: 13px;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="left">
+            <h1>记录者</h1>
+            <br>
+            <P>我们要飞到那遥远地方</P>
+            <P>看一看这世界</P>
+            <P>并非那么凄凉</P>
+        </div>
+        <div id="right">
+            <ul>
+                <li>第一篇文章的标题</li>
+                <li>第二篇文章的标题</li>
+                <li>第三篇文章的标题</li>
+                <li>第四篇文章的标题</li>
+                <li>第五篇文章的标题</li>
+            </ul>
+        </div>
+        
+        <button id="menub" class="fa fa-bars"></button>
+        
+        <script src="./assets/js/jquery-2.1.3.min.js"></script>
+        <script src="./assets/js/jquery.pjax.js"></script>
+        <script src="./assets/js/nprogress.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#menub").click(function(){
+                $("#right").fadeToggle("666");
+                $("#right").css("display", "flex");
+                $("#menub").toggleClass("fa fa-bars");
+                $("#menub").toggleClass("fa fa-angle-double-right");
+            });
+            });
+
+
+
+        </script>
+    </body>
+</html>

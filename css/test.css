@@ -1,0 +1,48 @@
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #left{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                height: 100%;
+                /*justify-content: center;
+                align-items: center;*/
+                margin:auto;
+            }
+            #right{
+                display: none;
+                width: 40%;
+                background-color: azure;
+            }
+            #showMenu{
+                position: fixed;
+                top: 8px;
+                right: 13px;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                background-color: #eee;
+            }
+            #hideMenu{
+                display: none;
+                position: fixed;
+                top: 8px;
+                right: 13px;
+                width: 36px;
+                height: 36px;
+                border: 0;
+                background-color: #eee;
+            }
+            .box{
+                margin: 10px 10px 20px 60px;
+                background-color: burlywood;
+            }
